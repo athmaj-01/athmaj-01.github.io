@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZEXUS</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+      margin:0;
+      overflow:hidden;
+      background:black;
+      font-family:Arial, sans-serif;
+    }
+
+    .bg-animation{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:
+      radial-gradient(circle at top left,#00ffff33,transparent 40%),
+      radial-gradient(circle at bottom right,#8b5cf633,transparent 40%);
+      animation: pulse 6s infinite alternate;
+    }
+
+    @keyframes pulse{
+      from{transform:scale(1);}
+      to{transform:scale(1.1);}
+    }
+
+    .grid{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size:40px 40px;
+    }
+
+    .glow{
+      text-shadow:0 0 20px #00ffff;
+    }
+
+    .card{
+      backdrop-filter: blur(15px);
+      background: rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+<div class="grid"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-5 text-white">
+
+  <div class="mb-5 px-4 py-2 rounded-full card">
+    <p class="tracking-[5px] text-cyan-300 text-sm">
+      FUTURE NETWORK AI
+    </p>
+  </div>
+
+  <h1 class="text-6xl md:text-8xl font-black glow bg-gradient-to-r from-cyan-300 to-purple-400 text-transparent bg-clip-text">
+    ZEXUS
+  </h1>
+
+  <h2 class="mt-4 text-2xl md:text-4xl font-bold">
+    SPEED CHECK TOOL
+  </h2>
+
+  <p class="mt-6 max-w-2xl text-gray-300 text-lg">
+    Futuristic internet speed analytics platform with AI powered diagnostics and next generation interface.
+  </p>
+
+  <div class="mt-10 card rounded-3xl p-8 max-w-2xl">
+
+    <p class="text-cyan-300 tracking-[5px] text-sm">
+      LAUNCH SEQUENCE
+    </p>
+
+    <h3 class="text-5xl font-black mt-3 bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
+      COMING SOON
+    </h3>
+
+    <p class="mt-5 text-gray-300">
+      Building a premium futuristic speed testing experience.
+    </p>
+
+    <button class="mt-8 px-6 py-3 bg-cyan-400 text-black font-bold rounded-2xl hover:scale-105 transition">
+      Explore Future
+    </button>
+
+  </div>
+
+  <div class="mt-20">
+    <p class="text-gray-500 tracking-[4px] text-xs">
+      CREATED BY ATHMAJ
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
